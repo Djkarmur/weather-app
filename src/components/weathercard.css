@@ -1,0 +1,126 @@
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+
+@import url(https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    
+}
+body{
+    height:100vh;
+    background-image: linear-gradient(to right top, #0c6c74, #008c89, #00ad91, #00cc8a, #12eb76);
+    background-repeat: no repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.weathercontent{
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: -7px 2px 41px -10px rgba(0,0,0,0.1);
+    
+}
+
+.mainweathercard{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #1A374D;
+    padding:40px 0px;
+    
+}
+.weathericon{
+   display: flex;
+   justify-content: center;
+   background-color: #B1D0E0;
+  flex-grow: 2;
+  border-radius: 10px 10px 0px 0px;
+
+}
+.weathericon > i{
+   font-size: 150px;
+   padding: 5vh;
+}
+.mainweathercard > .timing{
+   
+    flex: 0 0 30%;
+    height: 80%;
+    background-color: #95D1CC;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   border-radius: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    
+}
+.mainweathercard > .weathertemp{
+   font-size:50px ;
+   font-weight: 800;
+   color:#B1D0E0;
+}
+.weathercond{
+    font-size: 25px;
+    font-weight: 500;
+    color:#B1D0E0;
+}
+.weatherloc{
+    font-size: 16px;
+    color:#B1D0E0;
+}
+/* extra property  */
+.weathercontent >.extrainfo{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #B1D0E0;
+    padding:30px 0px;
+    border-radius: 0px 0px 10px 10px;
+   
+}
+ .suntime{
+     display: flex;
+ }
+ .suntime i{
+     padding-right:7px;
+     font-size: 20px;
+     padding-top: 5px;
+ }
+ .humidity{
+    display: flex;
+ }
+ .humidity i{
+    padding-right:7px;
+    font-size: 20px;
+    padding-top: 5px;
+}
+ .rain{
+     display: flex;
+ }
+ .rain i{
+    padding-right:7px;
+    font-size: 20px;
+    padding-top: 5px;
+}
+ .windspeed{
+     display:flex;
+ }
+ .windspeed i{
+    padding-right:7px;
+    font-size: 20px;
+    padding-top: 5px;
+}
+
+@media (max-width:450px){
+    .mainweathercard > .timing{
+        padding:6px;
+    }
+}
+@media (max-width:700px){
+    .mainweathercard > .timing{
+        padding:8px;
+    }
+}
